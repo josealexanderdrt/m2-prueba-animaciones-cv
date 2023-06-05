@@ -51,13 +51,12 @@ main {grid-area: main;
 
     .container p {
         position: absolute;
-        top:80%;
+        top:75%;
         width: 90%;
         height: 90px;
         background-color: #403d39;
-        padding: 10px;
-        left: 20px;
-        right: 20px;
+        padding: 5px;
+        left: 15px;
         text-align: center;
         border-radius: 30px;
         color: #ccc5b9;
