@@ -232,16 +232,16 @@ form{
   
 }
 
-.form input {
+form input {
   width: 90%;
   height: 30px;
   margin: 0.5rem;
 }
 
-.form button {
+form button {
   padding: 0.5em 1em;
   border: none;
-  background: rgb(17, 18, 18);
+  background: rgba(17, 18, 18, 0.144);
   cursor: pointer;
 }
 
