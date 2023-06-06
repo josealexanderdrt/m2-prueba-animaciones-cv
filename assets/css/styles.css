@@ -246,10 +246,39 @@ form{
 }
 
 
-footer{ font-size: 12px;
-display: flex;
-justify-content: center;
-align-items: center;}
+
+
+
+
+
+
+input {
+width: 100%;
+padding: 5px;
+outline: none;
+}
+label {
+    line-height: 30px;
+  }
+
+fieldset {
+    padding: 20px 40px;
+  }
+
+  form button {
+    margin: 10px;
+   }
+
+
+
+   footer{ font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+    
+
+
+
 @media (min-width: 576px){
 
     body{
