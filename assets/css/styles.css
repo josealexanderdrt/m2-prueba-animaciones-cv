@@ -134,9 +134,7 @@ body{
 }
 
 .titulo-experiencia{padding-bottom: 20px;}
-.line{ }
 
-.vacio {}
 
 .titulo-mis-trabajos {text-align: center;
 padding: 10px;margin: 5px;}
@@ -220,9 +218,10 @@ width: 70%;
 }
 
 form{
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
+  width: 70%;
+  max-width: 300px;
+  margin: 30px auto 20px auto;
+  padding: 20px auto auto 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -234,12 +233,12 @@ form{
 
 form input {
   width: 90%;
-  height: 30px;
-  margin: 0.5rem;
+  height: 5x;
+  margin: 5px;
 }
 
 form button {
-  padding: 0.5em 1em;
+  padding: 5px;
   border: none;
   background: rgba(17, 18, 18, 0.144);
   cursor: pointer;
@@ -262,12 +261,11 @@ label {
   }
 
 fieldset {
-    padding: 20px 40px;
+    padding: 20px 20px;
+    border-radius: 20px;
+
   }
 
-  form button {
-    margin: 10px;
-   }
 
 
 
