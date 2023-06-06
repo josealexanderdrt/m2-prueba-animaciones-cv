@@ -76,7 +76,7 @@
 
     
 
-    <section id="Formación Academica">
+    <section id="Formación Academica" class="formacion-academica">
 
 
         <h2 >Formación Academica</h2>
@@ -87,7 +87,7 @@
 
 
         <div>
-            <div>
+            <div class="formacion-academica-item">
                 <i class="fa-solid fa-chalkboard-user fa-3x my-3" style="color: #000000;"></i>
                 <h3> Desarrolador FullStack Javascript </h3>
                 <p>
@@ -95,14 +95,14 @@
                     
                 </p>
             </div>
-            <div >
+            <div class="formacion-academica-item">
                 <i class="fa-solid fa-graduation-cap fa-3x my-3"  style="color: #000000;"></i>
                 <h3 > Arquitectura </h3>
                 <p >
                     Universidad Santiago Mariño
                 </p>
             </div>
-            <div class="col-12 col-md-4">
+            <div class="formacion-academica-item">
                 <i class="fa-solid fa-school fa-3x  " style="color: #000000;"></i>
                 <h3> Educación Media </h3>
                 <p >
@@ -113,14 +113,17 @@
     </section>
 
 
+     <section id="Experiencia Laboral"class="titulo-experiencia"><h2 >Experiencia Laboral</h2></section> 
 
    
-     <section class="experiencia-laboral" id="Experiencia Laboral">
-        <h2 >Experiencia Laboral</h2>
+     <section class="experiencia-laboral" >
+  
 
    
+        <div class="line"> </div>
+        <div class="vacio"> </div>
 
-        <div>
+        <div class="experiencia-laboral-item">
            
                 <h3>Vetro Systems   - Santiago de Chile, Agosto 2022 - Marzo 2023</h3>
           
@@ -130,13 +133,12 @@
         </div>
 
 
-        <div>
-           
-         </div>
+        <div class="line"> </div>
+        <div class="vacio"> </div>
 
 
 
-        <div>
+        <div class="experiencia-laboral-item">
            
             <h3>Full Windows - Santiago de Chile, Abril 2022 - Julio 2022</h3>
       
@@ -146,7 +148,10 @@
         </div>
 
 
-        <div>
+        <div class="line"> </div>
+        <div class="vacio"> </div>
+        
+        <div class="experiencia-laboral-item">
            
             <h3>Mundo Glass - Santiago de Chile, Abril 2018 - Septiembre 2019</h3>
       
@@ -154,6 +159,9 @@
         
     
         </div>
+
+        <div class="line"> </div>
+        <div class="vacio"> </div>
     
 
 
@@ -167,11 +175,31 @@
 
 
 
-    <section id="Mis-trabajos">
+    <section  id="Mis-trabajos" class="tarjetas-mis-trabajos">
 
-        <h2 >Mis Trabajos</h2>
+        <h2 class="titulo-mis-trabajos"> Mis Trabajos</h2>
 
-        <div class="Mis-trabajos">
+            <div class="tarjeta">
+                <img src="assets/img/1.jpg" alt="Trabajo1" class="tarjeta-img">
+
+                <div class="tarjeta-body">
+                <h2 class="tarjeta-titulo">CV En Html</h2>
+                <p class="tarjeta-subtitulo"> Se realizó un  currículum vitae utilizando HTML.</p>
+
+                <button class="tarjeta-botom "> 
+                             
+                    <a href="https://github.com/josealexanderdrt/desafio1" target="_blank" title="CV con HTML en Github">CV con HTML </a>
+                </button>
+
+                </div>
+
+            </div>
+
+
+
+<!-- opcion 1
+
+        <div class="tarjetas">
             <div>
                 <div class="card">
                     <div >
@@ -192,13 +220,15 @@
             
         </div>
 
+        -->
+
     </section>
 
 
 
     <section id="Contáctame" >
 
-        <h2 >Contáctame</h2>
+        <h2 class="titulo-mis-trabajos" >Contáctame</h2>
 
         <p > Haré contato contigo después de que completes la información de este formularío</p>
 
@@ -211,7 +241,7 @@
             </div>
 
             <div>
-                <label >Correo electrónico</label>
+                <label >Correo</label>
                 <input placeholder="Correo electrónico" />
             </div>
 

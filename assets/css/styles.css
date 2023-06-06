@@ -21,8 +21,7 @@ nav{
     .navegacion-cv{
   
     display: flex;
-    justify-content:space-around
-    ;
+    justify-content:space-around;
     align-items: center;
     text-align: center;
     }
@@ -39,10 +38,12 @@ main {grid-area: main;
     justify-content: center;
     align-items: center;}
 
-    .container{  position: relative;
+    .container{ 
+       position: relative;
        
     }
    
+    
     .container img{
         width: 100%;
         height: 100%;
@@ -108,9 +109,147 @@ body{
 }
 
 
-.img-card{height: 200px;}
+
+.formacion-academica{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
+  padding: 5px;
+}
+
+.formacion-academica-item {padding: 15px;}
+
+.experiencia-laboral{
+  display: grid;
+  grid-template-columns: auto auto;
+
+}
+
+.experiencia-laboral-item{
+  text-align: center;
+  padding: 10px 5px 10px 5px;
+}
+
+.titulo-experiencia{padding-bottom: 20px;}
+.line{ }
+
+.vacio {}
+
+.titulo-mis-trabajos {text-align: center;
+padding: 10px;margin: 5px;}
+
+.tarjetas-mis-trabajos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
 
+.tarjeta{
+  width: 300px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  border:8px solid #252422;
+  position: relative;
+  
+}
+
+.tarjeta-img{ 
+width: 100%;
+height: 100%;
+object-fit:cover;
+border-radius: 15px;
+}
+
+.tarjeta-body{
+  width:100% ;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background: color #1f3d47;;
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  color: #403d39;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  
+
+}
+
+.tarjeta:hover .tarjeta-body{
+  right: 0;
+}
+
+
+.tarjeta-titulo{
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 20px;
+
+}
+
+.tarjeta-subtitulo{
+  text-transform: capitalize;
+  font-size: 10px;
+  line-height: 25px;
+  padding: 20px;
+  
+}
+
+.tarjeta-botom{
+
+color: #1f3d47;
+background: #8fabba;
+padding:20px;
+border-radius: 5px;
+text-transform: capitalize;
+border: none;
+outline: none;
+font-weight: 500;
+cursor: pointer;
+width: 70%;
+}
+
+form{
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+  
+}
+
+.form input {
+  width: 90%;
+  height: 30px;
+  margin: 0.5rem;
+}
+
+.form button {
+  padding: 0.5em 1em;
+  border: none;
+  background: rgb(17, 18, 18);
+  cursor: pointer;
+}
+
+
+footer{ font-size: 12px;
+display: flex;
+justify-content: center;
+align-items: center;}
 @media (min-width: 576px){
 
     body{
