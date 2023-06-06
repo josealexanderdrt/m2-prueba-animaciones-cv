@@ -15,7 +15,7 @@
     <nav>
         <div class="navegacion-cv">
             <a href="#inicio">
-                <img src="assets/img/logo_alexanderduarte.png" class="logo-alexander">
+                <img src="assets/img/logo_alexanderduarte.svg" class="logo-alexander">
                 </a>
             
            
@@ -236,23 +236,28 @@
 
 
             <div>
-                <label >Nombre</label>
-                <input placeholder="Nombre">
-            </div>
+                <form>
+                    <fieldset> 
+                         <legend>Formulario de contacto </legend>
+                    <div class="control-formulario">
+                        <label for="nombre"> Nombre</label>
+                        <input type="text" placeholder="Escribe tu nombre" required>
+                    </div> 
 
-            <div>
-                <label >Correo</label>
-                <input placeholder="Correo electrónico" />
-            </div>
-
-
-            <div >
-                <label >Mensaje</label>
-                <textarea placeholder="Escribe aquí tu mensaje"></textarea>
-            </div>
-
-            <div >
-                <button>Enviar</button>
+                    <div class="control-formulario">
+                        <label for="mail"> Correo</label>
+                        <input type="mail" placeholder="Escribe tu Correo" required>
+                    </div>
+                    
+                    <div class="control-formulario">
+                        <label for="number"> Número</label>
+                        <input type="number" placeholder="Número de contacto " required>
+                    </div>
+                    
+                    
+                    <button>Send</button>
+                    </fieldset>
+                    </form>
             </div>
 
 
@@ -265,7 +270,7 @@
 </main>
 
     <footer>
-        <p> <img src="assets/img/logo_alexanderduarte.png" class="logo-alexander"> Alexander Duarte 2023. Todos los derechos reservados .</p>
+        <p> <img src="assets/img/logo_alexanderduarte.svg" class="logo-alexander"> Alexander Duarte 2023. Todos los derechos reservados .</p>
     </footer>
 
 
