@@ -23,10 +23,10 @@ nav{
       }
 
     .logo-alexander{
-      height:40px;
+      height:50px;
       padding-top: 10px;
       background-color: #ccc5b9;
-      border-radius: 20px;
+      border-radius: 40px;
       }
     .navegacion-cv a{
       text-decoration: none;
@@ -112,14 +112,19 @@ main {grid-area: main;
 
 footer{ 
     grid-area: footer;
-    background-color: #ccc5b9;
-     color: #252422;
-     display: flex;
-     flex-direction: row;
-     padding: 8px;
-     justify-content: center;
-     align-items: center;
+    background-color:#252422;
+    color: #ccc5b9;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 10px;
+    padding-bottom: 10px;
 }
+
+footer .xs{height: 25px;}
+
 
 
 body{
@@ -130,7 +135,7 @@ body{
     "main main"
     "footer footer";
     grid-template-columns: auto  auto;
-    grid-template-rows:9% auto auto 8%;
+    grid-template-rows:9% auto auto 9%;
     height: 100vh;
 }
 
@@ -155,16 +160,23 @@ body{
 }
 
 .experiencia-laboral-item{
+  box-sizing: border-box;
   text-align: center;
-  padding: 10px 5px 10px 5px;
-  height: 240px;
+  padding: 15px 15px 10px 15px;
+  height: 200px;
+}
+.experiencia-laboral-item p{
+  font-size: 12px;
+  text-align: justify;
 }
 
 .titulo-experiencia{padding-bottom: 20px;}
 
 
-.titulo-mis-trabajos {text-align: center;
-padding: 10px;margin: 5px;}
+.titulo-mis-trabajos {
+  text-align: center;
+  padding: 10px; 
+  margin: 5px;}
 
 .tarjetas-mis-trabajos{
   display: flex;
@@ -181,6 +193,8 @@ padding: 10px;margin: 5px;}
   overflow: hidden;
   border:8px solid #252422;
   position: relative;
+  box-sizing: border-box;
+  margin: 10px;
   
 }
 
@@ -249,6 +263,17 @@ button a {
   color: #ccc5b9; 
   font-size: 15px;
 }
+
+
+#Contáctame p  {
+
+  padding: 2px;
+  margin: 2px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+
 form{
   width: 70%;
   max-width: 300px;
@@ -290,11 +315,6 @@ form button {
 
 
 
-
-
-
-
-
 input {
 width: 100%;
 padding: 5px;
@@ -310,39 +330,57 @@ fieldset {
 
   }
 
-
-
-
-   footer{ font-size: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;}
     
 
 
 
 @media (min-width: 576px){
 
-    body{
-        display: grid;
-        grid-template-areas: 
-        "nav main"
-        "nav main "
-        "nav main"
-        "footer footer";
-        grid-template-columns: 25%  auto;
-        grid-template-rows:5% auto auto 8%;
-        height: 100vh;
-   }
+  body{
+    display: grid;
+    grid-template-areas: 
+    "nav main"
+    "nav main "
+    "nav main"
+    "footer footer";
+    grid-template-columns: 25%  auto;
+    grid-template-rows:5% auto auto 8%;
+    height: 100vh;
+}
 
-   .navegacion-cv{
-    display: flex;
-    flex-direction: column;
-    justify-content:space-between;
-    align-items: center;
-    text-align: center;
-    padding: 60px;
-   }
+.navegacion-cv{
+display: flex;
+flex-direction: column;
+justify-content:space-between;
+align-items: center;
+text-align: center;
+padding: 60px;
+}
 
    .navegacion-cv a {padding: 50px;}
+
+
+.container-formacion{
+  display: flex;}
+
+.experiencia-laboral-item{
+  box-sizing: border-box;
+  text-align: center;
+  padding: 15px 30px 10px 30px;
+  height: 120px;
+  border-top: none;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  }
+
+  .experiencia-laboral-item :hover{
+    scale: 1.1;
+    cursor:pointer
+
+  }
+
+.experiencia-laboral-item p{
+  font-size: 12px;
+  text-align: justify;}
+
 }
